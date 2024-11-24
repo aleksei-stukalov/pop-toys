@@ -6,9 +6,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    // proxy: {
-    //   '/api': ':3000',
-    // },
+    proxy: {
+      '/api': 'https://pop-toys.onrender.com:10000',
+    },
   },
   resolve: {
     alias: {
