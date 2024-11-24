@@ -6,7 +6,7 @@
   "repository": "https://https://github.com/dev-academy-challenges/my-fullstack-collection",
   "main": "server/index.ts",
   "scripts": {
-    "deploy": "npm run knex migrate:latest && npm run knex seed:run && npm run dev:client && npm run dev:server",
+    "deploy": "npm run knex migrate:latest && npm run knex seed:run && npm run dev",
     "start": "node dist/server.js",
     "dev": "run-p dev:client dev:server",
     "dev:client": "vite --host",
