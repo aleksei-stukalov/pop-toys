@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "types": ["vite/client"],
+    "target": "es2020", 
+    "jsx": "react-jsx",
+    "module": "ES2020",
+    "moduleResolution": "Bundler", 
+    "noEmit": true,
+    "isolatedModules": true, 
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "allowImportingTsExtensions": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    // alias
+    "baseUrl": "./",
+    "paths": {
+      "@components/*": ["client/components/*"],
+      "@context/*": ["client/context/*"],
+      "@hooks/*": ["client/hooks/*"],
+      "@pages/*": ["client/pages/*"],
+      "@models/*": ["models/*"],
+    }
+  }
+}
